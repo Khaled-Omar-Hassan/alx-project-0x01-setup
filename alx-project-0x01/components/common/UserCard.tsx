@@ -1,6 +1,6 @@
 import { UserProps } from "@/interfaces";
 
-const PostCard: React.FC<UserProps> = ({ name, username, email, phone, website, address, company }) => {
+const UserCard: React.FC<UserProps> = ({ name, username, email, phone, website, address, company }) => {
     return (
 
         <div className="bg-white shadow-md rounded-lg p-4 mb-4">
@@ -23,4 +23,4 @@ const PostCard: React.FC<UserProps> = ({ name, username, email, phone, website, 
     );
 };
 
-export default PostCard;
+export default UserCard;
