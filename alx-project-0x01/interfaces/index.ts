@@ -3,10 +3,10 @@ export interface ButtonProps {
     styles: string
 }
 
-export interface PostCardProps {
-    id: string
-    title: string
-    content: string
-    author: string
-    date: string
+
+export interface PostProps {
+    userId: number;
+    id: number;
+    title: string;
+    body: string;
 }
