@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 
 
-const User: React.FC = () => {
+const Users: React.FC = () => {
     return (
         <>
             <Header />
@@ -23,4 +23,4 @@ export async function getStaticProps() {
     }
 }
 
-export default User;
+export default Users;
