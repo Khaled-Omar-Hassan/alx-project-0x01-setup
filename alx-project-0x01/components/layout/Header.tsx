@@ -1,13 +1,20 @@
+import Link from 'next/link';
+
 const Header: React.FC = () => {
     return (
-        <header className="bg-gray-800 text-white py-4">
-            <div className="container mx-auto flex justify-between items-center">
-                <h1 className="text-2xl font-bold">ALX Project</h1>
+        <header className="bg-blue-600 text-white shadow-md py-4">
+            <div className="container mx-auto flex justify-between items-center px-4">
+                <h3 className="font-bold text-2xl">
+                    <Link href="/">Daily Contents</Link>
+                </h3>
                 <nav>
-                    <ul className="flex space-x-4">
-                        <li><link href="/" className="hover:text-gray-400">Home</link></li>
-                        <li><link href="/about" className="hover:text-gray-400">About</link></li>
-                        <li><link href="/contact" className="hover:text-gray-400">Contact</link></li>
+                    <ul className="flex space-x-6">
+                        <li className="hover:underline">
+                            <Link href="/posts">Posts</Link>
+                        </li>
+                        <li className="hover:underline">
+                            <Link href="/users">Users</Link>
+                        </li>
                     </ul>
                 </nav>
             </div>
