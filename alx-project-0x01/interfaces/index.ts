@@ -12,7 +12,7 @@ export interface PostProps {
     body: string;
 }
 
-export interface Welcome {
+export interface UserProps {
     id: number;
     name: string;
     username: string;
